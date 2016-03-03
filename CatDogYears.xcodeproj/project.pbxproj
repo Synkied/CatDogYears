@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		685105F21C88C98D00A329E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685105F11C88C98D00A329E5 /* AppDelegate.swift */; };
-		685105F41C88C98D00A329E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685105F31C88C98D00A329E5 /* ViewController.swift */; };
 		685105F71C88C98D00A329E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685105F51C88C98D00A329E5 /* Main.storyboard */; };
 		685105F91C88C98D00A329E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685105F81C88C98D00A329E5 /* Assets.xcassets */; };
 		685105FC1C88C98D00A329E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685105FA1C88C98D00A329E5 /* LaunchScreen.storyboard */; };
 		685106071C88C98D00A329E5 /* CatDogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106061C88C98D00A329E5 /* CatDogYearsTests.swift */; };
 		685106121C88C98D00A329E5 /* CatDogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */; };
+		685106201C88CA4E00A329E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851061F1C88CA4E00A329E5 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		685105EE1C88C98D00A329E5 /* CatDogYears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatDogYears.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		685105F11C88C98D00A329E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		685105F31C88C98D00A329E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		685105F61C88C98D00A329E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		685105F81C88C98D00A329E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685105FB1C88C98D00A329E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		6851060D1C88C98D00A329E5 /* CatDogYearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDogYearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsUITests.swift; sourceTree = "<group>"; };
 		685106131C88C98D00A329E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6851061F1C88CA4E00A329E5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				685105F11C88C98D00A329E5 /* AppDelegate.swift */,
-				685105F31C88C98D00A329E5 /* ViewController.swift */,
 				685105F51C88C98D00A329E5 /* Main.storyboard */,
 				685105F81C88C98D00A329E5 /* Assets.xcassets */,
 				685105FA1C88C98D00A329E5 /* LaunchScreen.storyboard */,
 				685105FD1C88C98D00A329E5 /* Info.plist */,
+				6851061F1C88CA4E00A329E5 /* MainViewController.swift */,
 			);
 			path = CatDogYears;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				685105F41C88C98D00A329E5 /* ViewController.swift in Sources */,
 				685105F21C88C98D00A329E5 /* AppDelegate.swift in Sources */,
+				685106201C88CA4E00A329E5 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
