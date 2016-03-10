@@ -12,7 +12,6 @@
 		685105F91C88C98D00A329E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685105F81C88C98D00A329E5 /* Assets.xcassets */; };
 		685105FC1C88C98D00A329E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685105FA1C88C98D00A329E5 /* LaunchScreen.storyboard */; };
 		685106071C88C98D00A329E5 /* CatDogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106061C88C98D00A329E5 /* CatDogYearsTests.swift */; };
-		685106121C88C98D00A329E5 /* CatDogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */; };
 		685106201C88CA4E00A329E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851061F1C88CA4E00A329E5 /* MainViewController.swift */; };
 		68690B201C92098000CA7DFC /* Dog-barking-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68690B1E1C92098000CA7DFC /* Dog-barking-4.wav */; };
 		68690B211C92098000CA7DFC /* Cat-meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68690B1F1C92098000CA7DFC /* Cat-meow.wav */; };
@@ -20,13 +19,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		685106031C88C98D00A329E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 685105E61C88C98D00A329E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 685105ED1C88C98D00A329E5;
-			remoteInfo = CatDogYears;
-		};
-		6851060E1C88C98D00A329E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 685105E61C88C98D00A329E5 /* Project object */;
 			proxyType = 1;
@@ -45,7 +37,6 @@
 		685106021C88C98D00A329E5 /* CatDogYearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDogYearsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685106061C88C98D00A329E5 /* CatDogYearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsTests.swift; sourceTree = "<group>"; };
 		685106081C88C98D00A329E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6851060D1C88C98D00A329E5 /* CatDogYearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDogYearsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsUITests.swift; sourceTree = "<group>"; };
 		685106131C88C98D00A329E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6851061F1C88CA4E00A329E5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -62,13 +53,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		685105FF1C88C98D00A329E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6851060A1C88C98D00A329E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,7 +77,6 @@
 			children = (
 				685105EE1C88C98D00A329E5 /* CatDogYears.app */,
 				685106021C88C98D00A329E5 /* CatDogYearsTests.xctest */,
-				6851060D1C88C98D00A329E5 /* CatDogYearsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,24 +152,6 @@
 			productReference = 685106021C88C98D00A329E5 /* CatDogYearsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6851060C1C88C98D00A329E5 /* CatDogYearsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6851061C1C88C98D00A329E5 /* Build configuration list for PBXNativeTarget "CatDogYearsUITests" */;
-			buildPhases = (
-				685106091C88C98D00A329E5 /* Sources */,
-				6851060A1C88C98D00A329E5 /* Frameworks */,
-				6851060B1C88C98D00A329E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6851060F1C88C98D00A329E5 /* PBXTargetDependency */,
-			);
-			name = CatDogYearsUITests;
-			productName = CatDogYearsUITests;
-			productReference = 6851060D1C88C98D00A329E5 /* CatDogYearsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +167,6 @@
 						DevelopmentTeam = 6C4VK6PPZ6;
 					};
 					685106011C88C98D00A329E5 = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 6C4VK6PPZ6;
-						TestTargetID = 685105ED1C88C98D00A329E5;
-					};
-					6851060C1C88C98D00A329E5 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 6C4VK6PPZ6;
 						TestTargetID = 685105ED1C88C98D00A329E5;
@@ -228,7 +188,6 @@
 			targets = (
 				685105ED1C88C98D00A329E5 /* CatDogYears */,
 				685106011C88C98D00A329E5 /* CatDogYearsTests */,
-				6851060C1C88C98D00A329E5 /* CatDogYearsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,13 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		685106001C88C98D00A329E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6851060B1C88C98D00A329E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,14 +232,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		685106091C88C98D00A329E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				685106121C88C98D00A329E5 /* CatDogYearsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,11 +239,6 @@
 			isa = PBXTargetDependency;
 			target = 685105ED1C88C98D00A329E5 /* CatDogYears */;
 			targetProxy = 685106031C88C98D00A329E5 /* PBXContainerItemProxy */;
-		};
-		6851060F1C88C98D00A329E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 685105ED1C88C98D00A329E5 /* CatDogYears */;
-			targetProxy = 6851060E1C88C98D00A329E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,30 +395,6 @@
 			};
 			name = Release;
 		};
-		6851061D1C88C98D00A329E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CatDogYearsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quentinlathiere.CatDogYearsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CatDogYears;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		6851061E1C88C98D00A329E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CatDogYearsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.quentinlathiere.CatDogYearsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CatDogYears;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,15 +421,6 @@
 			buildConfigurations = (
 				6851061A1C88C98D00A329E5 /* Debug */,
 				6851061B1C88C98D00A329E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6851061C1C88C98D00A329E5 /* Build configuration list for PBXNativeTarget "CatDogYearsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6851061D1C88C98D00A329E5 /* Debug */,
-				6851061E1C88C98D00A329E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
