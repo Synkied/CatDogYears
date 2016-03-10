@@ -14,6 +14,8 @@
 		685106071C88C98D00A329E5 /* CatDogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106061C88C98D00A329E5 /* CatDogYearsTests.swift */; };
 		685106121C88C98D00A329E5 /* CatDogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */; };
 		685106201C88CA4E00A329E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851061F1C88CA4E00A329E5 /* MainViewController.swift */; };
+		68690B201C92098000CA7DFC /* Dog-barking-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68690B1E1C92098000CA7DFC /* Dog-barking-4.wav */; };
+		68690B211C92098000CA7DFC /* Cat-meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68690B1F1C92098000CA7DFC /* Cat-meow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		685106111C88C98D00A329E5 /* CatDogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogYearsUITests.swift; sourceTree = "<group>"; };
 		685106131C88C98D00A329E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6851061F1C88CA4E00A329E5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		68690B1E1C92098000CA7DFC /* Dog-barking-4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Dog-barking-4.wav"; sourceTree = "<group>"; };
+		68690B1F1C92098000CA7DFC /* Cat-meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cat-meow.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				685105FA1C88C98D00A329E5 /* LaunchScreen.storyboard */,
 				685105FD1C88C98D00A329E5 /* Info.plist */,
 				6851061F1C88CA4E00A329E5 /* MainViewController.swift */,
+				68690B1E1C92098000CA7DFC /* Dog-barking-4.wav */,
+				68690B1F1C92098000CA7DFC /* Cat-meow.wav */,
 			);
 			path = CatDogYears;
 			sourceTree = "<group>";
@@ -234,7 +240,9 @@
 			files = (
 				685105FC1C88C98D00A329E5 /* LaunchScreen.storyboard in Resources */,
 				685105F91C88C98D00A329E5 /* Assets.xcassets in Resources */,
+				68690B211C92098000CA7DFC /* Cat-meow.wav in Resources */,
 				685105F71C88C98D00A329E5 /* Main.storyboard in Resources */,
+				68690B201C92098000CA7DFC /* Dog-barking-4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +340,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -377,6 +386,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -402,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CatDogYears/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinlathiere.CatDogYears;
@@ -413,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CatDogYears/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinlathiere.CatDogYears;
@@ -487,6 +499,7 @@
 				685106181C88C98D00A329E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		685106191C88C98D00A329E5 /* Build configuration list for PBXNativeTarget "CatDogYearsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				6851061B1C88C98D00A329E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6851061C1C88C98D00A329E5 /* Build configuration list for PBXNativeTarget "CatDogYearsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				6851061E1C88C98D00A329E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

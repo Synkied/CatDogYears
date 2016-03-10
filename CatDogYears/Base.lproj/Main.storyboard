@@ -39,15 +39,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cat's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-Gw-kSK">
-                                <rect key="frame" x="20" y="124" width="109" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="rWM-n3-7lP"/>
-                                    <constraint firstAttribute="width" constant="109" id="yxo-pk-h8e"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-Hs-NqA">
                                 <rect key="frame" x="20" y="162" width="109" height="30"/>
                                 <constraints>
@@ -55,6 +46,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Calculate cat years"/>
+                                <connections>
+                                    <action selector="calculateCatYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8Z-Co-CI2"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOk-JP-DSg">
                                 <rect key="frame" x="236" y="130" width="94" height="37"/>
@@ -77,40 +71,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-H9-9oj">
-                                <rect key="frame" x="20" y="258" width="109" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XYP-uc-twb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-OV-crZ">
-                                <rect key="frame" x="20" y="296" width="117" height="30"/>
+                                <rect key="frame" x="20" y="296" width="117" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="38P-Kp-7F0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Calculate dog years"/>
+                                <connections>
+                                    <action selector="calculateDogYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMo-6O-0Yl"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEP-cG-2DW">
-                                <rect key="frame" x="236" y="264" width="94" height="37"/>
+                                <rect key="frame" x="236" y="264" width="94" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random factoid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cw-km-8hJ">
-                                <rect key="frame" x="20" y="334" width="560" height="21"/>
+                                <rect key="frame" x="20" y="341" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factoid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjY-DN-Vqg">
-                                <rect key="frame" x="20" y="370" width="560" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="LEy-eu-Ane"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -120,7 +100,36 @@
                                     <constraint firstAttribute="width" constant="145" id="4Gw-bz-D9k"/>
                                 </constraints>
                                 <state key="normal" title="Get random factoid"/>
+                                <connections>
+                                    <action selector="getRandomFactoid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcL-cN-hNS"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-H9-9oj">
+                                <rect key="frame" x="20" y="258" width="109" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XYP-uc-twb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factoid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjY-DN-Vqg">
+                                <rect key="frame" x="20" y="370" width="560" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="LEy-eu-Ane"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cat's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-Gw-kSK">
+                                <rect key="frame" x="20" y="124" width="109" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rWM-n3-7lP"/>
+                                    <constraint firstAttribute="width" constant="109" id="yxo-pk-h8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -167,10 +176,17 @@
                             <constraint firstItem="9cw-km-8hJ" firstAttribute="leading" secondItem="HjY-DN-Vqg" secondAttribute="leading" id="qB5-bl-ZQ1"/>
                             <constraint firstItem="UHi-H9-9oj" firstAttribute="leading" secondItem="b8S-aT-JCc" secondAttribute="leading" id="sGj-F4-rIQ"/>
                             <constraint firstItem="JLj-OV-crZ" firstAttribute="top" secondItem="UHi-H9-9oj" secondAttribute="bottom" constant="8" symbolic="YES" id="saI-Ln-eUD"/>
-                            <constraint firstItem="HjY-DN-Vqg" firstAttribute="top" secondItem="9cw-km-8hJ" secondAttribute="bottom" constant="15" id="tcM-Od-QO1"/>
+                            <constraint firstItem="HjY-DN-Vqg" firstAttribute="top" secondItem="9cw-km-8hJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tcM-Od-QO1"/>
                             <constraint firstItem="eSm-d8-0BE" firstAttribute="centerX" secondItem="b8S-aT-JCc" secondAttribute="centerX" id="wSf-ob-PI9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catAgeEntry" destination="iR2-Gw-kSK" id="JRw-Ud-RNn"/>
+                        <outlet property="catAgeResult" destination="gOk-JP-DSg" id="shr-5a-qaY"/>
+                        <outlet property="dogAgeEntry" destination="UHi-H9-9oj" id="7Lq-Gt-ltZ"/>
+                        <outlet property="dogAgeResult" destination="pEP-cG-2DW" id="KVv-Q4-11Q"/>
+                        <outlet property="randomFactoidText" destination="HjY-DN-Vqg" id="TQv-vc-VFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
